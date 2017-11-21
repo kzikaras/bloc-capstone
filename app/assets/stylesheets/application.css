@@ -1,0 +1,56 @@
+
+ html {
+    height: 100%;
+ }
+ body {
+    font-family: 'Raleway', sans-serif;
+    background-color:white;
+    color: rgb(255, 255, 255);
+    
+    text-shadow: 1px 1px #000000;
+ }
+
+ .jumbotron {
+     height: 25%;
+     background-color: rgba(185, 157, 148, 0.274);
+     background-image: url(https://images.unsplash.com/photo-1487952307198-4ccfbfca2f80?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&dl=ryan-riggins-213451.jpg&s=b860e6a5f6d3c5c07876e064aed11ce8);
+     background-size: cover;
+     background-repeat: no-repeat;
+     box-shadow: 2px 2px 2px 2px;
+ }
+
+ .image-container {
+    border: 2px black solid;
+    box-shadow: 2px 2px;
+ }
+
+ .text-center {
+     text-align: center;
+ }
+
+ .text-right {
+     text-align: right;
+ }
+
+ span .fa-mobile {
+    font-size: 40rem;
+ }
+
+ .feature {
+     color: #403029;
+     margin-top: 30px;
+     padding: 4px;
+ }
+
+ .feature-text {
+    color: #403029;
+    top: 50%;
+    text-shadow: 0.3px 0.3px;
+ }
+
+ .feature span {
+     font-size: 15rem;
+ }
+
+
+
