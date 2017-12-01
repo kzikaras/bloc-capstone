@@ -5,23 +5,35 @@
  body {
     font-family: 'Raleway', sans-serif;
     background-color:white;
-    color: rgb(255, 255, 255);
-    
-    text-shadow: 1px 1px #000000;
+ }
+
+ button {
+     margin: 4px;
+ }
+
+ .nav-content {
+     max-width: 1150px;
+     margin: auto;
  }
 
  .jumbotron {
-     height: 25%;
+     height: 400px;
      background-color: rgba(185, 157, 148, 0.274);
      background-image: url(https://images.unsplash.com/photo-1487952307198-4ccfbfca2f80?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&dl=ryan-riggins-213451.jpg&s=b860e6a5f6d3c5c07876e064aed11ce8);
      background-size: cover;
      background-repeat: no-repeat;
+     padding-top: 90px;
      box-shadow: 2px 2px 2px 2px;
+     color: rgb(255, 255, 255);
  }
 
  .image-container {
     border: 2px black solid;
     box-shadow: 2px 2px;
+ }
+
+ .message {
+     border-top: 1px solid black;
  }
 
  .text-center {
@@ -51,6 +63,16 @@
  .feature span {
      font-size: 15rem;
  }
+
+ .float-left {
+     float: left;
+ }
+
+ .navbar-brand {
+     text-decoration: none;
+     color: #403029;
+ }
+
 
 
 

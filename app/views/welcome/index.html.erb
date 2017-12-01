@@ -1,45 +1,67 @@
-<div class="jumbotron jumbotron-fluid">
+<% if current_user %>
+    <% if current_user.instructor = false %>
+        User is an instructor
+
+
+
+
+
+
+
+
+
+
+    <% else %>
+        <div class="container">
+            <button class="btn btn-primary">New Message</button>
+            <h2 class="text-center">Messages</h2>
+            <div class="message">
+                <p>*Test Message*</p>
+            </div>
+            <div class="message">
+                <p>*Test Message*</p>
+            </div>
+            <div class="message">
+                <p>*Test Message*</p>
+            </div>
+            <div class="message">
+                <p>*Test Message*</p>
+            </div>
+            <div class="message">
+                <p>*Test Message*</p>
+            </div>
+        </div>
+
+    <% end %>
+<% else %>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h1 class="display-3"><span class="fa fa-handshake-o"></span>HelpOut</h1>
+                    <h1 class="lead">A place to get support, and provide it.</h1>
+                </div>
+                <div class="col-md-4 text-center">                    
+                    <h2>Get Started!</h2>
+                    <%= link_to "Sign Up", new_user_registration_path, class:"btn btn-success btn-lg" %>
+                    <%= link_to "Log In", new_user_session_path, class:"btn btn-success btn-lg" %>                    
+                </div>
+            </div>    
+        </div>
+    </div>
     <div class="container">
-        <div class="row">
-            <div class="col-md-8">
-                <h1 class="display-3"><span class="fa fa-handshake-o"></span>HelpOut</h1>
-                <h1 class="lead">A place to get support, and provide it.</h1>
+        <div class="row feature">
+            <div class="col-md-6 text-right">
+                <div class="feature-text">
+                    <h1>No more worries.</h1>
+                    <p>Never buy an expensive service plan again. Simply chat with an available instructor and get help with your technical problems.  <br>Totally free.</p>
+                </div>
             </div>
-            <div class="col-md-4">
-                <h2>Sign up</h2>
-
-                <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
-                    <%= devise_error_messages! %>
-
-                    <div><%= f.label :email %><br />
-                    <%= f.email_field :email %></div>
-
-                    <div><%= f.label :password %><br />
-                    <%= f.password_field :password %></div>
-
-                    <div><%= f.label :password_confirmation %><br />
-                    <%= f.password_field :password_confirmation %></div>
-
-                    <div><%= f.check_box :instructor %><%= f.label :instructor, "Instructor" %></div>
-
-                    <div><%= f.submit "Sign Up", class: "btn btn-success" %></div>
-                <% end %>
-            </div>
-        </div>    
-    </div>
-</div>
-<div class="container">
-    <div class="row feature">
-        <div class="col-md-6 text-right">
-            <div class="feature-text">
-                <h1>No more worries.</h1>
-                <p>Never buy an expensive service plan again. Simply chat with an available instructor and get help with your technical problems.  <br>Totally free.</p>
+            <div class="col-md-6">
+                <span class="fa fa-desktop"></span> 
             </div>
         </div>
-        <div class="col-md-6">
-            <span class="fa fa-desktop"></span> 
-        </div>
     </div>
-</div>
+<% end %>
 
 
