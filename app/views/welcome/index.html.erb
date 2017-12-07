@@ -1,5 +1,5 @@
 <% if current_user %>
-    <% if current_user.instructor = false %>
+    <% if current_user.instructor %>
         User is an instructor
 
 
@@ -13,25 +13,14 @@
 
     <% else %>
         <div class="container">
-            <button class="btn btn-primary">New Message</button>
-            <h2 class="text-center">Messages</h2>
-            <div class="message">
-                <p>*Test Message*</p>
-            </div>
-            <div class="message">
-                <p>*Test Message*</p>
-            </div>
-            <div class="message">
-                <p>*Test Message*</p>
-            </div>
-            <div class="message">
-                <p>*Test Message*</p>
-            </div>
-            <div class="message">
-                <p>*Test Message*</p>
-            </div>
+            <%= link_to "Start a chat", new_chat_room_path, class: 'btn btn-primary' %>
+            <h2>My discussions</h2>
+            <ul>
+                <% current_user.chat_rooms.each do |room| %>
+                    <li><%= link_to "#{room.title}", chat_room_path(room.id) %></li>
+                <% end %>
+            </ul>
         </div>
-
     <% end %>
 <% else %>
     <div class="jumbotron jumbotron-fluid">

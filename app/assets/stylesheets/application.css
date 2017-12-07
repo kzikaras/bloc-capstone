@@ -75,4 +75,11 @@
 
 
 
+ .chat-box {
+     height: 600px;
+     overflow: scroll;
+ }
+
+
+
 
