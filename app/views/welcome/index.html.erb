@@ -10,6 +10,7 @@
     <% else %>
         <div class="container">
             <%= link_to "Start a chat", new_chat_room_path, class: 'btn btn-primary' %>
+            <h3 class="pull-right">Instructors Available: <%= @num_instructors %></h3>
             <h2>My discussions</h2>
             <ul>
                 <% current_user.chat_rooms.each do |room| %>
