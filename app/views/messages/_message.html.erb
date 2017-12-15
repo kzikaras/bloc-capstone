@@ -1,5 +1,9 @@
 <p>
-<span class="text-muted"><%= message.user.name %> at <%= message.timestamp %> says</span><br>
+<% if message.user != current_user %>
+    <%= link_to "", chat_room_up_vote_path(user_id: message.user.id, chat_room_id: message.chat_room.id),class:'fa fa-thumbs-up ', method: :put %>
+    <%= link_to "", chat_room_down_vote_path(user_id: message.user.id, chat_room_id: message.chat_room.id),class:'fa fa-thumbs-down', method: :put %>
+<% end %>
+<span class="text-muted">Score:<%= message.user.votes %> | <%= message.user.name %> at <%= message.timestamp %> says</span><br>
 <%= message.body %>
 </p>
                 
