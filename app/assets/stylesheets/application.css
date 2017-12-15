@@ -11,6 +11,11 @@
      margin: 4px;
  }
 
+ li {
+     font-size: 2rem;
+     list-style: none;
+ }
+
  .nav-content {
      max-width: 1150px;
      margin: auto;
@@ -75,9 +80,14 @@
 
 
 
- .chat-box {
+ #chat-box {
      height: 600px;
      overflow: scroll;
+ }
+
+ #instructor {
+     padding-top: 12px;
+     margin-right: 12px;
  }
 
 

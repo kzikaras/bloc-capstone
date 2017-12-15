@@ -1,5 +1,5 @@
 class ChatRoomsController < ApplicationController
-    skip_before_action :verify_authenticity_token, raise: false
+    
     def index
         @chat_rooms = ChatRoom.all
     end
@@ -19,6 +19,8 @@ class ChatRoomsController < ApplicationController
     end
 
     def show
+        @user = User.all
+        @chat_rooms = ChatRoom.all
         @chat_room = ChatRoom.includes(:messages).find_by(id: params[:id])
         @message = Message.new
     end

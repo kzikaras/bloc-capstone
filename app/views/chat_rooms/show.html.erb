@@ -1,6 +1,6 @@
 <div class="container">
     <h1><%= @chat_room.title %></h1>
-    <div class="chat-box">
+    <div id="chat-box">
         
         <%= render @chat_room.messages %>
     
@@ -9,3 +9,13 @@
     
     
 </div>
+
+
+<script>
+window.onload = function(){
+    var scrollBox = document.querySelector("#chat-box");
+    console.log(scrollBox);
+    
+    scrollBox.scrollTop = scrollBox.scrollHeight;
+};
+</script>
