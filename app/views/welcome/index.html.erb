@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-8">
                 <h1 class="display-3"><span class="fa fa-handshake-o"></span>HelpOut</h1>
-                <h1 class="lead">The help you need. Totally free.</h1>
+                <h1 class="lead">A place to get support, and provide it.</h1>
             </div>
             <div class="col-md-4">
                 <h2>Sign up</h2>
@@ -20,7 +20,9 @@
                     <div><%= f.label :password_confirmation %><br />
                     <%= f.password_field :password_confirmation %></div>
 
-                    <div><%= f.submit "Learn", class: "btn btn-success" %></div>
+                    <div><%= f.check_box :instructor %><%= f.label :instructor, "Instructor" %></div>
+
+                    <div><%= f.submit "Sign Up", class: "btn btn-success" %></div>
                 <% end %>
             </div>
         </div>    
