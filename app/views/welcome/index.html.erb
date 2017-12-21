@@ -23,11 +23,11 @@
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <div class="row">
-                <div class="col-md-8">
-                    <h1 class="display-3"><span class="fa fa-handshake-o"></span>HelpOut</h1>
+                <div class="col-md-8 text-center">
+                    <%= image_tag('helpoutLetters.png', class:'hero-text') %>
                     <h1 class="lead">A place to get support, and provide it.</h1>
                 </div>
-                <div class="col-md-4 text-center">                    
+                <div class="col-md-4 text-center sign-up">                    
                     <h2>Get Started!</h2>
                     <%= link_to "Sign Up", new_user_registration_path, class:"btn btn-success btn-lg" %>
                     <%= link_to "Log In", new_user_session_path, class:"btn btn-success btn-lg" %>                    
@@ -40,11 +40,35 @@
             <div class="col-md-6 text-right">
                 <div class="feature-text">
                     <h1>No more worries.</h1>
+                    <h2>As a user:</h2>
                     <p>Never buy an expensive service plan again. Simply chat with an available instructor and get help with your technical problems.  <br>Totally free.</p>
                 </div>
             </div>
             <div class="col-md-6">
                 <span class="fa fa-desktop"></span> 
+            </div>
+        </div>
+        <div class="row feature">
+            <div class="col-md-6 text-right">
+                <div class="feature-text">
+                    <h1>Help others learn their tech.</h1>
+                    <h2>As an instructor:</h2>
+                    <p>Let your geek side out. Help others learn their new technology products while keeping your skills sharp.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <span class="fa fa-hand-spock-o"></span> 
+            </div>
+        </div>
+        <div class="row feature">
+            <div class="col-md-6 text-right">
+                <div class="feature-text">
+                    <h1>Join our community.</h1>
+                    <p>A simple, friendly community of people helping each other out.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <span class="fa fa-users"></span> 
             </div>
         </div>
     </div>

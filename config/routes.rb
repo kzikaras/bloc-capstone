@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'contact_form/new'
+
+  get 'contact_form/create'
+
   get 'welcome/index'
 
   devise_for :users
@@ -10,7 +14,9 @@ Rails.application.routes.draw do
     put '/down-vote' => 'chat_rooms#down_vote', as: :down_vote
   end
 
+  resources :pages
 
+  resources :contact_form
   
   
   
