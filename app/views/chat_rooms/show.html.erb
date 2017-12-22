@@ -1,0 +1,11 @@
+<div class="container room-show">
+    <h1><%= @chat_room.title %></h1>
+    <div id="chat-box">
+        
+        <%= render @chat_room.messages %>
+    
+    </div>
+    <%= link_to "New message", new_chat_room_message_path(@chat_room), class:"btn btn-success" %>
+    
+    
+</div>
