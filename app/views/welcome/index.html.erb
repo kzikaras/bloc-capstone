@@ -1,17 +1,17 @@
 <% if current_user %>
     <% if current_user.instructor %>
-        <div class="container">
-            <h2>Available cases</h2>
+        <div class="container feature feature-text make-height">
+            <h2 class="discussions-cases">Available cases</h2>
             <% @chat_rooms.each do |room| %>
                 <small>Created by: <%= @user.find(room.user_id).name %> at <%= room.created_at %></small>
                 <li><%= link_to "#{room.title}", chat_room_path(room.id) %></li>
             <% end %>
         </div>
     <% else %>
-        <div class="container">
+        <div class="container feature feature-text make-height">
             <%= link_to "Start a chat", new_chat_room_path, class: 'btn btn-primary' %>
             <h3 class="pull-right">Instructors Available: <%= @num_instructors %></h3>
-            <h2>My discussions</h2>
+            <h2 class="discussions-cases">My discussions</h2>
             <ul>
                 <% current_user.chat_rooms.each do |room| %>
                     <li><%= link_to "#{room.title}", chat_room_path(room.id) %></li>

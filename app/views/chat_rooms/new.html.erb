@@ -1,11 +1,11 @@
-<div class="container">
+<div class="container feature feature-text make-height">
     <h1>New chat</h1>
-
+    <h3>Enter a description of your problem</h3>
     <%= form_for @chat_room do |f| %>
         <div class="form-group">
             <%= f.label :title %>
             <%= f.text_field :title, autofocus: true, class: 'form-control' %>
         </div>
-        <%= f.submit "Start chat", class: 'btn btn-primary' %>
+        <%= f.submit "Start chat", class: 'btn btn-success' %>
     <% end %>
 </div>

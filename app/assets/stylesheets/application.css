@@ -1,142 +1,148 @@
 
- html {
+html {
     height: 100%;
     width: 100%;
- }
- body {
+}
+body {
     font-family: 'Raleway', sans-serif;
     background-color: #2C1B35;
- }
+}
 
- button {
-     margin: 4px;
- }
+button {
+    margin: 4px;
+}
 
- li {
-     font-size: 2rem;
-     list-style: none;
- }
+li {
+    font-size: 2rem;
+    list-style: none;
+}
 
- footer {
-     
-     color: #ffffff;
-     height: 200px;
-     width: 99.8%;
-     border-top: 0.2px solid white;
-     margin-top: 50px;
-     padding: 6px;
- }
+footer {
+    
+    color: #ffffff;
+    height: 200px;
+    width: 99.8%;
+    border-top: 0.2px solid white;
+    margin-top: 50px;
+    padding: 6px;
+}
 
- footer ul {
-     margin-top: 15px;
-     text-align: center;
- }
+footer ul {
+    margin-top: 15px;
+    text-align: center;
+}
 
- footer li {
+footer li {
     font-size: 0.75rem;
- }
+}
 
- .nav-content {
-     max-width: 1150px;
-     margin: auto;
- }
+.nav-content {
+    max-width: 1150px;
+    margin: auto;
+}
 
 
- .jumbotron {
-     height: 600px;
-     
-     background-image: url(https://images.unsplash.com/photo-1468495244123-6c6c332eeece?auto=format&fit=crop&w=1522&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
-     background-size: cover;
-     background-repeat: no-repeat;
-     padding-top: 90px;
-     color: rgb(255, 255, 255);
-     
- }
+.jumbotron {
+    height: 600px;
+    
+    background-image: url(https://images.unsplash.com/photo-1468495244123-6c6c332eeece?auto=format&fit=crop&w=1522&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 90px;
+    color: rgb(255, 255, 255);
+    
+}
 
- .image-container {
+.image-container {
     border: 2px black solid;
     box-shadow: 2px 2px;
- }
+}
 
- .message {
-     border-top: 1px solid black;
- }
+.message {
+    border-top: 1px solid black;
+}
 
- .text-center {
-     text-align: center;
- }
+.text-center {
+    text-align: center;
+}
 
- .text-right {
-     text-align: right;
- }
+.text-right {
+    text-align: right;
+}
 
- span .fa-mobile {
+span .fa-mobile {
     font-size: 40rem;
- }
+}
 
- .feature {
-     color: #ffffff;
-     margin-top: 50px;
-     padding: 10px;
- }
+.feature {
+    color: #ffffff;
+    margin-top: 50px;
+    padding: 10px;
+}
 
- .feature-text {
+.feature-text {
     color: #ffffff;
     top: 50%;
     text-shadow: 0.3px 0.3px;
- }
+}
 
- .feature span {
-     font-size: 15rem;
- }
+.feature span {
+    font-size: 15rem;
+}
 
- .float-left {
-     float: left;
- }
+.float-left {
+    float: left;
+}
 
- .navbar-brand {
-     text-decoration: none;
-     color: #403029;
- }
+.navbar-brand {
+    text-decoration: none;
+    color: #403029;
+}
 
+#chat-box {
+    padding: 10px;
+    border: 0.5px solid white;
+    color: #ffffff;
+    height: 600px;
+    overflow: scroll;
+}
 
+#instructor {
+    padding-top: 12px;
+    margin-right: 12px;
+}
 
- #chat-box {
-     padding: 10px;
-     border: 0.5px solid white;
-     color: #ffffff;
-     height: 600px;
-     overflow: scroll;
- }
+.discussions-cases {
+    margin-top: 20px;
+}
 
- #instructor {
-     padding-top: 12px;
-     margin-right: 12px;
- }
- 
- .logo {
-     width: 20%;
-     margin: 0px;
- }
+.logo {
+    width: 20%;
+    margin: 0px;
+}
 
- .footer-logo {
-     width: 15%;
- }
+.footer-logo {
+    width: 15%;
+}
 
- .sign-up {
-     height: 500px;
-     margin-top: 45px;
- }
+.sign-up {
+    height: 500px;
+    margin-top: 45px;
+}
 
- .room-show {
-     color: #ffffff;
-     height: 75%;
- }
+.room-show {
+    color: #ffffff;
+    height: 75%;
+}
 
- .hero-text {
-     width: 80%;
-     margin-top: 0px;
- }
+.hero-text {
+    width: 80%;
+    margin-top: 0px;
+}
+
+.make-height {
+    height: 500px;
+}
 
 
 
