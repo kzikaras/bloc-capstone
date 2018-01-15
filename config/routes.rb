@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  namespace :admin do
+    resources :users
+    resources :chat_rooms
+    resources :messages
+
+    root to: "users#index"
+  end
+
   get 'contact_form/new'
 
   get 'contact_form/create'
