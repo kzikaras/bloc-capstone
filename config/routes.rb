@@ -7,10 +7,6 @@ Rails.application.routes.draw do
     root to: "users#index"
   end
 
-  get 'contact_form/new'
-
-  get 'contact_form/create'
-
   get 'welcome/index'
 
   devise_for :users

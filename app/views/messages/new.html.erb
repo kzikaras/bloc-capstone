@@ -1,7 +1,7 @@
 <div class="container">
     <%= form_for [@chat_room, @message], url:{action: "create"} do |f| %>
       <% if @message.errors.any? %>
-    <div class="aler alert-danger">
+    <div class="alert alert-danger">
       <h4><%= pluralize(@message.errors.count, "error") %>.</h4>
       <ul>
         <% @message.errors.full_messages.each do |msg| %>
