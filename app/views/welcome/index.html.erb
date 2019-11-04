@@ -12,11 +12,13 @@
             <%= link_to "Start a chat", new_chat_room_path, class: 'btn btn-primary' %>
             <h3 class="pull-right">Instructors Available: <%= @num_instructors %></h3>
             <h2 class="discussions-cases">My discussions</h2>
-            <ul>
-                <% current_user.chat_rooms.each do |room| %>
-                    <li><%= link_to "#{room.title}", chat_room_path(room.id) %></li>
-                <% end %>
-            </ul>
+            <% current_user.chat_rooms.each do |room| %>
+                <div class="container">
+                    <%= link_to "Delete Room", chat_room_path(room.id), method: :delete, class:"btn btn-danger" %>
+                    <%= link_to "Enter Chat: #{room.title}", chat_room_path(room.id), class:"btn btn-primary" %></li>
+                </div>
+                <br>
+            <% end %>
         </div>
     <% end %>
 <% else %>

@@ -25,6 +25,12 @@ class ChatRoomsController < ApplicationController
         @message = Message.new
     end
 
+    def destroy
+        @chatroom = ChatRoom.find(params[:id])
+        @chatroom.destroy()
+        redirect_to welcome_index_url
+    end
+
     def up_vote
         @user = User.find(params[:user_id])
         @user.votes += 1
