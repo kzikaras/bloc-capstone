@@ -16,6 +16,7 @@ Rails.application.routes.draw do
     resources :messages, only: [:new, :create, :show, :index, :post]
     put '/up-vote' => 'chat_rooms#up_vote', as: :up_vote
     put '/down-vote' => 'chat_rooms#down_vote', as: :down_vote
+    post '/new_message' => 'chat_rooms#new_message', as: :new_message
   end
 
   resources :pages

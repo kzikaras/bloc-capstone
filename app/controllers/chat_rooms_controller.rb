@@ -53,9 +53,25 @@ class ChatRoomsController < ApplicationController
         end
     end
 
+    def new_message
+        @message = current_user.messages.new(messages_params)
+        @chat_room = ChatRoom.find(params[:chat_room_id])
+        @message.chat_room = @chat_room
+        if @message.save
+            flash[:sucess] = "Message saved!"
+            redirect_to chat_room_path(params[:chat_room_id])
+        else
+            redirect_to welcome_index_url
+        end
+    end
+
     private
 
     def chat_room_params
         params.require(:chat_room).permit(:title)
+    end
+
+    def messages_params
+        params.require(:message).permit(:body)
     end
 end
