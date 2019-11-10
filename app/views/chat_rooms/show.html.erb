@@ -7,7 +7,7 @@
     </div>
 
     <div class="container">
-        <%= form_for [@chat_room, @message], url: chat_room_new_message_path(chat_room_id = @chat_room.id) do |f| %>
+        <%= form_for [@chat_room, @message], remote: true, url: chat_room_new_message_path(chat_room_id = @chat_room.id) do |f| %>
             <div class="form-group">
                 <%= f.label :message %>
                 <%= f.text_field :body, autofocus: true, class: 'form-control' %>
